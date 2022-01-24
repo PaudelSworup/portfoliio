@@ -1,0 +1,104 @@
+.services-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+.services, .teams{
+    background-color: #111;
+    color: #fff;
+}
+
+.services .title::before, .teams .title::before{
+    background:#fff;
+}
+
+.services .title::after{
+    background: #111;
+    content:"What I Provide";
+}
+
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    padding: 20px 25px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.services .serv-content .card:hover{
+    background-color: crimson;
+    color: #fff;
+}
+
+
+
+.services .serv-content .card .box{
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i{
+    font-size: 40px;
+    color: crimson;
+    transition: color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+}
+
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+
+.services .serv-content .card .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 7px 0;
+}
+
+.services .serv-content .card > p{
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+        max-width: 800px;
+    }
+
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:690px){
+
+    .max-width{
+        padding: 0 23px;
+    }
+
+    .services .serv-content .card{
+        width:100%; 
+    }
+
+}
+
+.servicesreveal{
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .servicesreveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

@@ -1,0 +1,159 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.nav-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navblack{
+    background-color:#000;
+}
+
+
+
+.navbar .nav-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo > a{
+    font-size:35px ;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .logo > a > span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+
+.navbar .menu > li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .menu > li >  a{
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 18px;
+    letter-spacing: 1.42px;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+
+.navbar .menu > li > a::after{
+    content: "";
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+.navbar .menu > li > a:hover{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+
+
+.navbar .menu > li > a:hover::after{
+    color: crimson;
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scaleX(0.8);
+}
+
+.menu-btn{
+    color:#fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-btn .bars-icon{
+    display: block;
+}
+
+.menu-btn .cross-icon{
+    display: none;
+}
+
+
+@media(max-width: 991px){
+    .nav-width{
+        padding: 0 50px;
+    } 
+
+    .menu-btn{
+        display: block;
+        z-index: 1;
+    }
+
+    .navbar .menu{
+        position: fixed;
+         background:linear-gradient(to right top, #f6dbe6, #efd4e5, #e5cde5, #d8c7e6, #c9c2e7, #bec4e8, #b3c6e7, #aac7e4, #adcde0, #b6d3dc, #c2d7d9, #cfdad9);
+         height: 100vh;
+         width: 100%;
+         text-align: center;
+         padding-top:80px;
+         left: -100%;
+         top:0;
+         transition: all 0.9s ease;
+    }
+    
+
+    .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu > li{
+        display:block;
+    }
+
+    .navbar .menu > li > a{
+        display: inline-block;
+        color:#FFF;
+        transition: all 0.3s ease;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+
+
+@media(max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+        max-width: 800px;
+    }
+}
+
+@media(max-width:690px){
+
+    .max-width{
+        padding: 0 23px;
+    }
+
+}

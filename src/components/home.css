@@ -1,0 +1,112 @@
+.home-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+.home{
+    display: flex;
+    background: url("/public/images/code.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    position: relative;
+    font-family: 'ubuntu', sans-serif;
+    
+}
+
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.title1{
+    animation-name: moveRight;
+    animation-duration: 5s;
+}
+.title2{
+    animation-name: moveLeft;
+    animation-duration: 5s;
+}
+
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+    margin-left: 2px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-variant: 550;
+    margin-left: -3px; 
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    /* color:crimson */
+}
+
+.home .home-content .text-3 .span{
+    color: crimson;
+    font-weight: 500;
+}
+
+.home .home-content .text-3 .span2{
+    color: #fff;
+    font-weight: 600;
+}
+
+.home .home-content> button{
+ cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding: 12px 36px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-right: 1rem;
+  background-color: rgba(50, 50, 50, 1);
+  transition: all 0.3s ease;
+}
+
+.home .home-content> button:hover{
+    color: #000;
+  background-color: #e6e6e6;
+ 
+}
+
+
+
+@media(max-width:1700px){
+    .home .home-width{
+        margin-left: 0px;
+    }
+}
